@@ -1,0 +1,170 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: 'Arial Black', cursive;
+	text-align:center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bd5833;
+    background-image:  url("../images/cigle.jpg");
+	//background-repeat: no-repeat, repeat;
+    //background-size: contain;
+}
+
+h3, th {
+    font-size: 16px;
+    text-align:center;
+}
+
+.oglas {
+	margin: 13px 0 9px;
+	background-color: #f5eeeb;
+    
+    margin: 5%;
+	padding:10px;
+    text-align:left;
+}
+
+input[type="text"], input[type="password"] , input[type="date"] {
+	outline:none;
+	padding:5px;
+	display:block;
+	width:300px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	
+}
+
+textarea {
+	outline:none;
+	padding:5px;
+	display:block;
+	width:600px;
+	border-radius: 3px;
+	border:1px solid #eee;
+}
+
+input.short[type="text"] {
+	outline:none;
+	padding:5px;
+	display:block;
+	width:100px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	
+}
+
+input.long[type="text"] {
+	outline:none;
+	padding:5px;
+	display:block;
+	width:600px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	
+}
+
+
+select{
+	outline:none;
+	padding:5px;
+	width:300px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	//margin:20px auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+	//background-color:#FAFFBD;
+}
+
+input.special[type="text"], input.special[type="password"]{
+	outline:none;
+	padding:5px 10px 5px 10px;
+	display:block;
+	width:300px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	margin:20px auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+	background-color:#FAFFBD;
+}
+input[type="radio"]{
+	outline:none;
+	padding:5px;
+	border-radius: 3px;
+	border:1px solid #eee;
+	margin:10px auto;
+    font-size: 14px;
+	background-color:#FAFFBD;
+}
+
+input[type="submit"]{
+	padding:5px;
+	color:#fff;
+	background:#bf6d4e;
+	font-family: 'Arial Black', cursive;
+    width:inherit;
+	margin:10px auto;
+	border:0px;
+	border-radius: 3px;
+	cursor:pointer;
+    font-size: 12px;
+}
+
+
+
+input[type="submit"]:hover{
+	background:#0081ad;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+	text-align:left;
+	border-spacing: 20px 3px;
+	max-width: 80%;
+  }
+  
+ 
+
+td,th {border:none} 
+
+th {
+    border:none;
+    border-bottom-style: solid;
+}
+
+.center {
+    margin: auto;
+    max-width: 80%;
+    padding: 10px 0px;
+    text-align:left;
+}
+
+.picture_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.header{
+	background-image:  url("../images/beton.jpg");
+	padding:20px 0px;
+	width:100%;
+	text-align:center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header a{
+	color:#0081ad;
+	text-decoration: none;
+}
+
+input.red{
+	background:#c90845;
+	
+}
