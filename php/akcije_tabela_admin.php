@@ -1,19 +1,17 @@
 
 
 <?php
-// ova strana je zasticena. Njena uloga je da prikaze akcije u bazi koje jos nisu istekle u obliku tabele
-// nema nikakvog citanja ili menjanja podataka, samo link ka drugim stranama 
-
+// ova strana je zasticena. Služi da prikaže akcije u bazi koje jos nisu istekle u obliku tabele
+// nema nikakvog unosa ili menjanja podataka, 
+// ali svaka akcija sadrži link ka drugim stranama, jednan je za ažuriranje
+// ima i jedno dugme za unos nove akcije 
 require_once 'zastita.php';
-
-
 // akcije u bazi koje nisu istekle
 //
 $records = $conn->prepare('SELECT ID_AKCIJE, NASLOV, ROK FROM akcije   
 						   WHERE ROK > NOW()-1 ORDER BY ROK ');
 $records->execute();
 //$param = $records->fetch(PDO::FETCH_ASSOC);
-
 $actions = $records->fetchAll();
 ?>
 
@@ -31,14 +29,15 @@ $actions = $records->fetchAll();
     require_once 'toolbar.php';
     ?>
 	<h3> Trenutno aktuelne akcije </h3>
-    <br>
-    <table class="center">
-	<tr><th>Akcija</th> <th> Rok </th> <th>Detalji </th> <th>  </th>Ažuriranje</tr>
+    <form action="akcija_nova_admin.php" method="POST">
+        <input type="submit" name="operation" value="Nova akcija">
+    </form> 
+    
+	<table class="center">
+	<tr><th>Akcija</th> <th> Rok </th> <th>Detalji </th> <th>Ažuriranje</th></tr>
 <?php 
     $akc_no = 0;
     $akc_num = sizeof($actions);
-
-
     while ($akc_no < $akc_num){
         $date=date_create($actions[$akc_no]['ROK']);
         echo '<tr><td>'.$actions[$akc_no]['NASLOV'].'</td><td>'.date_format($date,"d.m.Y").'</td><td>';
@@ -55,7 +54,6 @@ $actions = $records->fetchAll();
         $akc_no = $akc_no + 1;
     }
     echo '</table>';
-
 ?>
 </body>
 </html>

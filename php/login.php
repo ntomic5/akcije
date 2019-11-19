@@ -66,7 +66,7 @@ endif;
 		<input type="text"  placeholder="nalog" name="nalog" class="center" >
 		<input type="password"  placeholder="lozinka" name="lozinka" class="center">
 
-		<input value="prihvati" type="submit">
+		<input value="Prijavi se" type="submit">
 
 	</form>
    

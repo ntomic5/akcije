@@ -72,7 +72,7 @@ if (isset($_SESSION['ID_AKCIJE'])){
     <form action="akcija_detalji_admin.php" method="POST">
     <table>
     <tr><td> Naslov: </td><td><input type="text" class="long" name="naslov" value="<?= $akcija['NASLOV'] ?>"></tr></tr>
-    <tr><td> Opis: </td><td><textarea rows = "3" name="opis" ><?= $akcija['OPIS'] ?></textarea> </tr></tr>
+    <tr><td> Opis: </td><td><textarea rows = "2" name="opis" ><?= $akcija['OPIS'] ?></textarea> </tr></tr>
     <tr><td> Lokacija: </td><td><input type="text" class="long" name="lokacija" value="<?= $akcija['LOKACIJA'] ?>"></tr></tr>
     <tr><td> Vreme: </td><td><input type="text" class="long" name="vreme" value="<?= $akcija['VREME'] ?>"></tr></tr>
 	<tr><td> Kontakt: </td><td><input type="text" class="long" name="kontakt" value="<?= $akcija['KONTAKT'] ?>"></tr></tr>
@@ -88,8 +88,8 @@ if (isset($_SESSION['ID_AKCIJE'])){
     }  
 ?>
     <tr><td> Rok: </td><td><input type="date" name="rok" value="<?= $akcija['ROK'] ?>"></tr></tr>
-    <tr><td> Beleške: </td><td><textarea rows = "3" name="beleske" ><?= $akcija['BELESKE'] ?> </textarea> </tr></tr>
-    <tr><td></td> <td><input type="submit" value="Prihvati"> </td></tr>
+    <tr><td> Beleške: </td><td><textarea rows = "2" name="beleske" ><?= $akcija['BELESKE'] ?> </textarea> </tr></tr>
+    <tr><td></td> <td><input type="submit" value="Sačuvaj"> </td></tr>
     </table>
     <table>
     </div>
